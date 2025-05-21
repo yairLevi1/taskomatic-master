@@ -49,23 +49,3 @@ button.theme-button:hover {
   text-decoration: none;
 }
 
-button.login-button {
-  background-image: linear-gradient(to right, #6a3093 0%, #a044ff 51%, #6a3093 100%);
-  margin: 5px;
-  padding: 15px 45px;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-}
-button.login-button:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}

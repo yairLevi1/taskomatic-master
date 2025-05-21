@@ -30,7 +30,16 @@
   /* color: white; */
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
+  padding: 8px 5px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
 }
+.navbar-links li a:hover {
+  border: 1px solid #6a3093;
+  background-color: rgba(106, 48, 147, 0.1);
+}
+
 
 .navbar-actions {
   display: flex;
@@ -44,36 +53,44 @@
 }
 
 .circle-button {
-  background-color: #ffffff;
-  color: white; 
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 25px; /* 🟢 זה הגודל של האייקון */
-  font-weight: bold;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* padding: 0; חשוב להסיר padding כדי לא לדחוף את האייקון פנימה */
+  background: none;    
+  border: none;           
+  padding: 0;            
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.circle-button:hover {
-  font-size: 35px; /* 🟢 זה הגודל של האייקון */
+.icon-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  object-fit: contain;
 }
-
-/* .login-button {
-  background-color: #00aaff;
+.icon-image:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+button.login-button {
+  background-image: linear-gradient(to right, #6a3093 0%, #a044ff 51%, #6a3093 100%);
+  margin: 5px;
+  padding: 15px 45px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-} */
-
-/* .login-button:hover {
-  background-color: #0090cc;
-} */
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+button.login-button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
