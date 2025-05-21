@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 5px rgba(173, 166, 166, 0.5);
+  /* צבע חצי שקוף שייקח מהגוון הכללי של הרקע */
+  background-color: rgba(255, 255, 255, 0.2);
+
+  /* מטושטש את מה שמאחוריו */
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px);
+  /* תמיכה בספארי */
+
+  /* אם רוצים גבול שקוף ומעוגל שמשתלב יפה */
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  /* color: white; */
+  padding: 10px 20px;
+  direction: rtl;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li a {
+  /* color: white; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  height: 36px;
+  margin-left: 12px;
+}
+
+.circle-button {
+  background-color: #ffffff;
+  color: white; 
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 25px; /* 🟢 זה הגודל של האייקון */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0; חשוב להסיר padding כדי לא לדחוף את האייקון פנימה */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.circle-button:hover {
+  font-size: 35px; /* 🟢 זה הגודל של האייקון */
+}
+
+/* .login-button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+} */
+
+/* .login-button:hover {
+  background-color: #0090cc;
+} */

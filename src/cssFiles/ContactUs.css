@@ -1,0 +1,111 @@
+/* Main container */
+.contact-container {
+  height: 76.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #0f2b4a, #1a5b55);
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Contact card */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 50%;
+  border: #10b981 solid 2px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contact title */
+.contactUs-Box-H1, .contact-title {
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* Contact links container */
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+
+/* Common styles for all links */
+.contact-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Book call button */
+.book-call-button {
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #10b981;
+  border-radius: 9999px;
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.25);
+
+}
+
+.book-call-button:hover {
+  background-color: #059669;
+  box-shadow: 0 6px 8px rgba(16, 185, 129, 0.35);
+}
+
+/* Icon styles */
+.icon {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  max-width: 1rem;
+  max-height: 1rem;
+}
+
+svg {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+
+/* Link text */
+.link-text {
+  font-size: 0.80rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-link,
+  .book-call-button {
+    padding: 0.75rem 1rem;
+  }
+
+  .link-text {
+    font-size: 0.875rem;
+  }
+}

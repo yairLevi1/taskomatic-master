@@ -1,0 +1,98 @@
+.table-container {
+  padding: 2rem;
+  /* background: linear-gradient(135deg, #3b2279 0%, #000000 100%); */
+  min-height: 100vh;
+  max-width: 600px;
+  margin-inline: auto;
+  /* color: white; */
+  /* direction: rtl; */
+  /* font-family: 'Segoe UI', sans-serif; */
+}
+
+.table-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+  direction: inherit;
+  /* יירש אוטומטית את הכיוון מה־<body> */
+  text-align: start;
+  /* יישר את התוכן אוטומטית לפי הכיוון */
+
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: center;
+  word-wrap: break-word;
+  text-align: start;
+
+}
+
+/* .comparison-table thead {
+  background-color: #1c1c2b;
+  color: white;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: #2a2a3c;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #1f1f2e;
+}
+
+.check {
+  color: #4cd137;
+  font-size: 1.3rem;
+}
+
+.xmark {
+  color: #e84118;
+  font-size: 1.3rem;
+} */
+
+/* ריספונסיביות למסכים צרים */
+@media (max-width: 768px) {
+  .comparison-table thead {
+    display: none;
+  }
+
+  .comparison-table,
+  .comparison-table tbody,
+  .comparison-table tr,
+  .comparison-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-table tr {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+  }
+
+  .comparison-table td {
+    text-align: right;
+    position: relative;
+    padding-right: 50%;
+    font-size: 0.95rem;
+  }
+
+  .comparison-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-weight: bold;
+    color: #aaa;
+  }
+}

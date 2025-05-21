@@ -1,0 +1,71 @@
+/* עיצוב רקע + טקסט למצב רגיל */
+body.theme-default {
+  background-color: #ffffff;
+  color: #222222;
+  transition: all 0.3s ease;
+}
+
+/* עיצוב רקע + טקסט למצב חלופי */
+body.theme-alt {
+  background: linear-gradient(135deg, #2b0a52 0%, #000000 100%);;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* עיצוב כללי לכפתורים */
+/* button.theme-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 2px solid currentColor;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  transition: background-color 0.3s ease;
+
+
+} */
+
+button.theme-button {
+  background-image: linear-gradient(to right, #6a3093 0%, #a044ff 51%, #6a3093 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+button.theme-button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+button.login-button {
+  background-image: linear-gradient(to right, #6a3093 0%, #a044ff 51%, #6a3093 100%);
+  margin: 5px;
+  padding: 15px 45px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+button.login-button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
